@@ -1,6 +1,6 @@
 #!/bin/bash
-mv ./benq.edid /etc/X11
-mv ./10-monitor.conf /usr/share/X11/xorg.conf.d
+cp ./benq.edid /etc/X11
+cp ./10-monitor.conf /usr/share/X11/xorg.conf.d
 
 cat <<EOT >> /etc/lightdm/lightdm.conf
 [Seat:*]
